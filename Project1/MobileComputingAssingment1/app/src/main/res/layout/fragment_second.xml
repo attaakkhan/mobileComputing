@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.atta.mobilecomputingassingment1.SecondFragment">
+
+    <TextView
+        android:id="@+id/textview_second"
+        android:layout_width="423dp"
+        android:layout_height="70dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_upload"
+
+            android:layout_width="219dp"
+            android:layout_height="73dp"
+            android:text="Upload" />
+
+        <Button
+            android:id="@+id/btn_db"
+            android:layout_width="match_parent"
+
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:text="Show DataBase" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:saveEnabled="true" />
+
+    <TextView
+        android:id="@+id/text_view_db"
+        android:layout_width="match_parent"
+        android:layout_height="277dp"
+        android:text="" />
+
+</LinearLayout>

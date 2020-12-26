@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.atta.mobilecomputingassingment1.SecondFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="226dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="226dp"
+                android:layout_height="80dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_upload_server"
+
+                    android:layout_width="114dp"
+                    android:layout_height="61dp"
+                    android:text="Upload Db To server" />
+
+                <Button
+                    android:id="@+id/button_gps"
+
+                    android:layout_width="100dp"
+                    android:layout_height="81dp"
+                    android:text="Tap GPS" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="226dp"
+                android:layout_height="66dp"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/button_date"
+
+                    android:layout_width="100dp"
+                    android:layout_height="81dp"
+                    android:text="Date" />
+
+                <EditText
+                    android:id="@+id/textview_sub"
+                    android:layout_width="124dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:text="Subject Id" />
+            </LinearLayout>
+
+            <!--            <Button-->
+            <!--                android:id="@+id/button_upload_server"-->
+
+            <!--                android:layout_width="224dp"-->
+            <!--                android:layout_height="87dp"-->
+            <!--                android:text="Upload Db To server" />-->
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textview_gps"
+                android:layout_width="match_parent"
+                android:layout_height="82dp"
+                android:text="" />
+
+            <Button
+                android:id="@+id/button_contact_graph"
+
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:text="Contact graph" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_upload"
+
+            android:layout_width="219dp"
+            android:layout_height="73dp"
+            android:text="Save to DB" />
+
+        <Button
+            android:id="@+id/btn_db"
+            android:layout_width="match_parent"
+
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:text="Show DataBase" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:saveEnabled="true" />
+
+    <TextView
+        android:id="@+id/text_view_db"
+        android:layout_width="match_parent"
+        android:layout_height="391dp"
+        android:text="" />
+
+</LinearLayout>
